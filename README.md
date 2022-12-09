@@ -8,9 +8,10 @@ version 0.0.1
 3. saves(demo)
 4. stats
 
+***
 ### files
 
-index.html - page view
-script.js - main logic
-style.css - main style
-console.js(gitnore) - helpful commands to debug game
+* index.html - page view
+* script.js - main logic
+* style.css - main style
+* console.js(gitnore) - helpful commands to debug game
