@@ -22,31 +22,40 @@
 		</span>
 			
 		<div id="click_frame">
-			<button id="side_button" onClick="side_click()">
+			<button class="click_button" onClick="side_click()">
 				<img src="images\side.png">
+			</button>
+			<button class="click_button">
+				
+			</button>
+			<button class="click_button">
+				
+			</button>
+			<button class="click_button">
+				
 			</button>
 		</div>
 		<div id="shop_frame">
 			<h2>autoclicker shop</h2>
 			<h2 style="color:transparent;">empty</h2>
-			<button id="buy_line" class="shop" onclick="buy(30,1,0,'linecost',this.id)">
-				buy <b>line</b> <span id="linecost">30</span> sides
+			<button id="buy_line" class="shop" onclick="buy(10,1,0,'linecost',this.id)">
+				buy <b>line</b> <span id="linecost">10</span> sides
 			</button>
 			<img src="images/line.png" width=50px height=50px>
-			<button id="buy_graph" class="shop" onclick="buy(60,2,0,'graphcost',this.id)">
-				buy <b>graph</b> <span id="graphcost">60</span> sides 
+			<button id="buy_graph" class="shop" onclick="buy(100,2,0,'graphcost',this.id)">
+				buy <b>graph</b> <span id="graphcost">100</span> sides 
 			</button>
 			<img src="images/graph.png" width=50px height=50px>
-			<button id="buy_traingle" class="shop" onclick="buy(120,3,0,'trainglecost',this.id)">
-				buy <b>traingle</b> <span id="trainglecost">120</span> sides 
+			<button id="buy_traingle" class="shop" onclick="buy(400,3,0,'trainglecost',this.id)">
+				buy <b>traingle</b> <span id="trainglecost">400</span> sides 
 			</button>
 			<img src="images/traingle.png" width=50px height=50px>
-			<button id="buy_square" class="shop" onclick="buy(400,4,0,'squarecost',this.id)">
-				buy <b>square</b> <span id="squarecost">400</span> sides 
+			<button id="buy_square" class="shop" onclick="buy(800,4,0,'squarecost',this.id)">
+				buy <b>square</b> <span id="squarecost">800</span> sides 
 			</button>
 			<img src="images/square.png" width=50px height=50px>
-			<button id="buy_pentagon" class="shop" onclick="buy(700,5,0,'pentagoncost',this.id)">
-				buy <b>pentagon</b> <span id="pentagoncost">700</span> sides 
+			<button id="buy_pentagon" class="shop" onclick="buy(1600,5,0,'pentagoncost',this.id)">
+				buy <b>pentagon</b> <span id="pentagoncost">1600</span> sides 
 			</button>
 			<img src="images/pentagon.png" width=50px height=50px>
 		</div>
@@ -63,9 +72,15 @@
 		<div class="s_frame">
 			
 		</div>
+		<div id="messageBg">
+			<div class=container>
+				<div id="message">
+					<h3 id="messageText">message</h3>
+					<button onclick="document.getElementById('messageBg').style = 'display: none'">ok</button>
+					<button id="cancel">cancel</button>
+				</div>
+			</div>
+		</div>
 	</div>
-
-
-
-</body
+</body>
 	</html>

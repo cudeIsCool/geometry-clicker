@@ -32,7 +32,7 @@ function buy(cost,autoclick,click,costId,ele)
 		//autoclick = how many sides per second u get from bying it
 		if(sides<cost)
 		{
-			alert("you don't have enough sides :(");
+			message("you don't have enough sides :(");
 		}
 		else
 		{
@@ -40,10 +40,13 @@ function buy(cost,autoclick,click,costId,ele)
 			c = c + click;
 			sides = sides - cost;
 			set = document.getElementById(costId).textContent;
-			newCost = parseInt(set) * multiplayer
+			newCost = parseInt(set) * multiplayer;
 			setHTML = document.getElementById(costId).innerHTML = newCost;
 			
-			document.getElementById(ele).onclick = function(){buy(newCost,1,0,costId,this.id)}
+			document.getElementById(ele).onclick = function(){
+				buy(newCost,1,0,costId,this.id);
+				console.log(newCost);
+			}
 		}
 		update()
 	}
@@ -85,4 +88,10 @@ function clear_proggres()
 		deleteAllCookies()
 		location.reload();
 		}
+	}
+function message(text)
+	{
+		document.getElementById("messageBg").style = "display:block;";
+		document.getElementById("cancel").style = "display:none;"
+		document.getElementById("messageText").innerHTML = text;
 	}

@@ -14,4 +14,4 @@ version 0.0.1
 * index.html - page view
 * script.js - main logic
 * style.css - main style
-* console.js(gitnore) - helpful commands to debug game
+* console.js(gitignore) - helpful commands to debug game
