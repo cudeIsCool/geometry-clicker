@@ -1,0 +1,159 @@
+html, body {
+  height: 100%;
+  width: 100%;
+	margin:0%;
+	background-color:black;
+}
+#main_frame
+{
+	display: grid;
+  grid-template-columns: 43% 25% 25%;
+  gap: 15px 15px;
+	height: 98%;
+  width: 98%;
+	margin: 0px;
+	border: 6px dashed;
+	border-radius: 6px;
+	/*
+	border-color: #63ffd6;
+	background-color: rgba(188, 255, 242, 0.3);
+	*/
+}
+#main_frame: :first-child{
+	align-self: center;
+}
+#shop_frame
+{
+	display: grid;
+  grid-template-columns:70% 30%; 
+	
+  align-items: right;
+	font-size: 20px;
+	font-family: monospace;
+	height: 98%;
+  width: 98%;
+	border: 6px dashed;
+	border-radius: 6px;
+	border-color: #ff7070;
+	background-color: rgba(255, 148, 148, 0.3);
+	
+}
+#shop_frame img{
+	border:5px solid #000000;
+	background-color: #ffffff;
+	border-radius:15%;
+	margin-top:5%;
+	margin-right:10%;
+}
+#shop_frame h2{
+	color:#fd4949;
+}
+.s_frame
+{
+	height: 90%;
+  width: 98%;
+	border: 6px dashed;
+	border-radius: 6px;
+	border-color: #8f7000;
+	background-color: rgba(254, 245, 89, 0.8);
+	font-family:monospace;
+	font-size: 20px;
+	
+}
+.s_frame button
+{
+	margin: 5%;
+	border-radius: 6px;
+	border-width: 6px;
+	font-size: 20px;
+	font-family: monospace;
+	text-align: center;
+}
+#stat_frame
+{
+	height: 90%;
+  width: 98%;
+	border: 6px dashed;
+	border-radius: 6px;
+	border-color: #2e6632;
+	background-color: rgba(127, 193, 142, 0.8);
+	font-family:monospace;
+	font-size: 20px;
+}
+#stat_frame h2{
+	color: #144d37ff
+}
+h2
+{
+	font-size: 95%;
+}
+#click_frame
+{
+	height: 98%;
+  width: 98%;
+	border: 6px dashed;
+	border-radius: 6px;
+	border-color: #57aeff;
+	background-color: rgba(73, 162, 255, 0.3);
+}
+#side_button
+{
+	margin: 5%;
+	border-width: 6px;
+	border-radius: 6px;
+}
+button:active{
+	background-color: #94ff94;
+}
+.shop{
+	margin-top:5%;
+	font-size: 15px;
+	font-family: monospace;
+	text-align: center;
+	width:90%;
+	height:80%;
+	border-width: 3px;
+	border-radius: 6px;
+}
+#side_button:active
+{
+	background-color: rgba(255, 161, 161, 0.5);
+}
+
+#sides
+{
+	user-select: none;
+	font-size: 50px;
+	font-family: monospace;
+	height:1.2em;
+	animation: lightUp 1s infinite;
+	animation-play-state:paused;
+	color: white;
+}
+@keyframes lightUp {
+  	0%{background-color:transparent;}
+		8%{background-color:#94ff94;}
+    20%{background-color:transparent;}
+    100%{background-color:transparent;}
+		}
+#progress
+{
+	border: 4px solid white;
+	border-radius: 6px;
+	width:100%;
+	height:30px;
+	display: none;
+}
+#bar
+{
+	background-color: rgba(61, 255, 95, 0.5);
+	width: 70%;
+	height: 100%;
+	animation: loading 1s infinite;
+	animation-play-state: paused;
+}
+@keyframes loading
+{
+	0%{width: 0%;}
+	100%{width: 100%;}
+}
