@@ -169,7 +169,7 @@ button:active{
 	0%{width: 0%;}
 	100%{width: 100%;}
 }
-#messageBg
+#screenOverlay
 {
 	display: none;
 	margin: 0px;
@@ -198,6 +198,36 @@ button:active{
 	border-radius: 6px;
 }
 #message button
+{
+	border:3px solid black;
+	border-radius:6px;
+}
+#moreStats
+{
+	text-decoration:underline;
+	color:blue;
+	background-color:transparent;
+	border:none;
+	padding:0%;
+	font-family:monospace;
+	font-size:20px;
+}
+#moreStats:hover
+{
+	color: #0b41bf;
+}
+#moreStatsFrame
+{
+	background-color: #8a8a8a;
+	text-align: center;
+	border: 6px solid #383838;
+	border-radius: 6px;
+	width: 30%;
+	height: 60%;
+	font-family: monospace;
+	font-size:20px;
+}
+#moreStatsFrame button
 {
 	border:3px solid black;
 	border-radius:6px;

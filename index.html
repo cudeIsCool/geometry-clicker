@@ -64,7 +64,8 @@
 			total sides - <span id="total_sides">0</span><br>
 			total clickers - <span id="total_clickers">0</span><br>
 			total sides per click - <span id="per_click">1</span><br>
-			seconds in game - <span id="seconds">0</span>
+			seconds in game - <span id="seconds">0</span><br>
+			<button id="moreStats" onclick="statsShow()">more stats</button>
 		</div>
 		<div class="s_frame">
 			<button onclick="clear_proggres()">delete all proggres</button>
@@ -72,12 +73,17 @@
 		<div class="s_frame">
 			
 		</div>
-		<div id="messageBg">
+		<div id="screenOverlay">
 			<div class=container>
 				<div id="message">
 					<h3 id="messageText">message</h3>
-					<button onclick="document.getElementById('messageBg').style = 'display: none'">ok</button>
+					<button onclick="document.getElementById('screenOverlay').style = 'display: none'">ok</button>
 					<button id="cancel">cancel</button>
+				</div>
+				<div id="moreStatsFrame">
+					<h2>Stats</h2>
+					<div>nothing for now...</div>
+					<button onclick="document.getElementById('screenOverlay').style = 'display: none'">back</button>
 				</div>
 			</div>
 		</div>

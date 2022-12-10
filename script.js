@@ -91,7 +91,15 @@ function clear_proggres()
 	}
 function message(text)
 	{
-		document.getElementById("messageBg").style = "display:block;";
+		document.getElementById("screenOverlay").style = "display:block;";
 		document.getElementById("cancel").style = "display:none;"
 		document.getElementById("messageText").innerHTML = text;
+		document.getElementById("message").style = "display:block;";
+		document.getElementById("moreStatsFrame").style = "display: none;";
 	}
+function statsShow()
+{
+	document.getElementById("screenOverlay").style = "display:block;";
+	document.getElementById("moreStatsFrame").style = "display: block;";
+	document.getElementById("message").style = "display:none;";
+}
