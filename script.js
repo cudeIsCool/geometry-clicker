@@ -3,6 +3,11 @@ let ac = 0;//auto clickers and total auto clickers
 let c = 1;//click multiplayer and total
 const multiplayer = 2;//cost multiplayer
 let seconds = 0;//seconds for current session
+let lines = 0;
+let graphs = 0;
+let traingles = 0;
+let squares = 0;
+let pentagons = 0;
 function update()
 	{
 		document.getElementById("sides").innerHTML = sides + " - your sides"
@@ -14,6 +19,7 @@ setInterval(function tick(){
 	seconds++;
 	ts = ts + ac
 	update()
+	save()
 	if(ac>0)
 	{
 			document.getElementById("sides").style ="animation-play-state: running;"
@@ -45,7 +51,6 @@ function buy(cost,autoclick,click,costId,ele)
 			
 			document.getElementById(ele).onclick = function(){
 				buy(newCost,1,0,costId,this.id);
-				console.log(newCost);
 			}
 		}
 		update()
@@ -56,16 +61,23 @@ function stats()
 		document.getElementById("total_clickers").innerHTML = ac;
 		document.getElementById("per_click").innerHTML = c;
 		document.getElementById("seconds").innerHTML = seconds;
-		document.cookie = "sides = " + sides + "; Secure";
+	}
+function save()
+{
+		document.cookie = `sides = ${sides}; Secure`.format;
 		document.cookie = "ts = " + ts + "; Secure";
 		document.cookie = "ac = " + ac + "; Secure";
 		document.cookie = "c = " + c + "; Secure";
 		document.cookie = "seconds = " + seconds + "; Secure";
-		
-	}
+}
+function loadSave()
+{
+	eval(document.cookie)
+}
 function load()
 	{
-		eval(document.cookie)
+		update()
+		loadSave()
 	}
 //thanks to stack overflow
 function deleteAllCookies() {

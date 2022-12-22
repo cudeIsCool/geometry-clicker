@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>geometry clicker</title>
+  <link rel="icon" type="image/x-icon" href="images/icon.ico">
   <link href="style.css" rel="stylesheet" type="text/css">
 	<script src="script.js"></script>
 	<script src="console.js"></script>
@@ -65,13 +66,12 @@
 			total clickers - <span id="total_clickers">0</span><br>
 			total sides per click - <span id="per_click">1</span><br>
 			seconds in game - <span id="seconds">0</span><br>
-			<button id="moreStats" onclick="statsShow()">more stats</button>
 		</div>
 		<div class="s_frame">
 			<button onclick="clear_proggres()">delete all proggres</button>
 		</div>
-		<div class="s_frame">
-			
+		<div id="links">
+			<a href="https://github.com/cudeIsCool/geometry-clicker">github</a>
 		</div>
 		<div id="screenOverlay">
 			<div class=container>
@@ -79,15 +79,6 @@
 					<h3 id="messageText">message</h3>
 					<button onclick="document.getElementById('screenOverlay').style = 'display: none'">ok</button>
 					<button id="cancel">cancel</button>
-				</div>
-				<div id="moreStatsFrame">
-					<h2>Stats</h2>
-					<div>your lines - 0</div>
-					<div>your graphs - 0</div>
-					<div>your traingles - 0</div>
-					<div>your squares - 0</div>
-					<div>your pentagons - 0</div>
-					<button onclick="document.getElementById('screenOverlay').style = 'display: none'">back</button>
 				</div>
 			</div>
 		</div>
