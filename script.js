@@ -39,16 +39,20 @@ function buy(cost,autoclick,click,costId,ele)
 			ac = ac + autoclick;
 			c = c + click;
 			sides = sides - cost;
+			//get text with cost
 			set = document.getElementById(costId).textContent;
+			//new cost for item
 			newCost = parseInt(set) * multiplayer;
+			//set new cost to item
 			setHTML = document.getElementById(costId).innerHTML = newCost;
-			
+
 			document.getElementById(ele).onclick = function(){
-				buy(newCost,1,0,costId,this.id);
-				console.log(newCost);
+				buy(parseInt(document.getElementById(costId).textContent),1,0,costId,ele);
 			}
+
 		}
 		update()
+		console.log(newCost,costId,ele,set,setHTML,document.getElementById(costId).textContent);
 	}
 function stats()
 	{
