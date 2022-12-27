@@ -7,7 +7,7 @@ html, body {
 #main_frame
 {
 	display: grid;
-  grid-template-columns: 47% 25% 25%;
+  grid-template-columns: 25% 25% 47%;
   gap: 10px 10px;
 	height: 100%;
   width: 100%;
@@ -21,12 +21,9 @@ html, body {
 #main_frame: :first-child{
 	align-self: center;
 }
-#shop_frame
-{
+#shop_frame {
 	display: grid;
-  grid-template-columns:70% 30%; 
-	
-  align-items: center;
+	grid-template-columns: 50% 50%;
 	font-size: 20px;
 	font-family: monospace;
 	height: 98%;
@@ -35,6 +32,12 @@ html, body {
 	border-radius: 6px;
 	border-color: #ff7070;
 	background-color: rgba(255, 148, 148, 0.3);
+}
+.c_shop
+{
+	display: grid;
+  grid-template-columns:70% 30%; 
+	align-items: center;
 	
 }
 #shop_frame img{

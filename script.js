@@ -1,6 +1,6 @@
 let sides=0,ts=0;//sides and total sides
-let ac = 0;//auto clickers and total auto clickers
-let c = 1;//click multiplayer and total
+let ac = 0;//auto clickers
+let c = 1;//click multiplayer
 const multiplayer = 2;//cost multiplayer
 let seconds = 0;//seconds for current session
 function update()
@@ -52,7 +52,6 @@ function buy(cost,autoclick,click,costId,ele)
 
 		}
 		update()
-		console.log(newCost,costId,ele,set,setHTML,document.getElementById(costId).textContent);
 	}
 function stats()
 	{
