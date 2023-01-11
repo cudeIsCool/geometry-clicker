@@ -45,10 +45,9 @@ function buy(cost,autoclick,click,costId,ele)
 			newCost = parseInt(set) * multiplayer;
 			//set new cost to item
 			setHTML = document.getElementById(costId).innerHTML = newCost;
-
+			
 			document.getElementById(ele).onclick = function(){
 				buy(parseInt(document.getElementById(costId).textContent),autoclick,click,costId,ele);
-				buy(parseInt(document.getElementById(costId).textContent),ac,c,costId,ele);
 			}
 
 		}
