@@ -48,6 +48,7 @@ function buy(cost,autoclick,click,costId,ele)
 
 			document.getElementById(ele).onclick = function(){
 				buy(parseInt(document.getElementById(costId).textContent),autoclick,click,costId,ele);
+				buy(parseInt(document.getElementById(costId).textContent),ac,c,costId,ele);
 			}
 
 		}
